@@ -1,0 +1,10 @@
+stages:
+   - deploy
+
+deploy:
+   stage: deploy
+   image: docker:24.0.7-dind
+   before_script:
+   script:
+   
+#Описываем подключение к кластеру k8s и выполнение скрипта деплоя приложения   
